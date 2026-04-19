@@ -6,7 +6,7 @@ This portfolio highlights my projects, skills, experience, certifications, and p
 ---
 
 ## 🌐 Live Website
-👉 https://gauravbaba3.github.io/Updated-Portfolio/
+👉 https://gaurav-kumar-311.netlify.app/
 
 ---
 
@@ -28,7 +28,7 @@ This portfolio highlights my projects, skills, experience, certifications, and p
 ### Frontend
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript
 
 ### Styling
 - Custom CSS with variables
@@ -39,4 +39,5 @@ This portfolio highlights my projects, skills, experience, certifications, and p
 - Form validation using JavaScript
 - WhatsApp API integration for contact
 
----
+## Author:
+-- Gaurav Kumar
