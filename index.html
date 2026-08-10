@@ -3,858 +3,911 @@
 
   <head>
     <meta charset="UTF-8" />
-    <title>Gaurav Kumar Portfolio</title>
+    <title>Gaurav Kumar — Data Science & Full Stack Developer</title>
+    <meta name="description" content="Gaurav Kumar — Data Science & Python Full Stack Developer." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf8f4" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet" />
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="header">
-      <nav class="navbar container" aria-label="Main navigation">
-        <a href="#home" class="brand"><span>Gaurav Kumar</span> - Data Science</a>
 
-        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
-          <span></span><span></span><span></span>
-        </button>
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-        <ul class="nav-links" id="nav-links">
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="#home" class="brand">
+          <span class="brand-mark">GK</span>
+          <span class="brand-name">Gaurav Kumar</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://github.com/GauravBaba3/my-resumes" target="_blank" class="btn btn-outline btn-sm">Resume</a>
+          <a href="#contact" class="btn btn-fill btn-sm">Hire Me →</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">✕</button>
+        <ul class="mobile-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-
-        <a href="#contact" class="desktop-only">Hire Me</a>
-      </nav>
+        <div class="mobile-socials">
+          <a href="https://www.linkedin.com/in/gauravkumar311/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/GauravBaba3" target="_blank">GitHub</a>
+          <a href="mailto:gaurav.kumar.jobs.2003@gmail.com">Email</a>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section class="hero section" id="home">
+
+      <!-- ══════════════ HERO ══════════════ -->
+      <section class="hero" id="home">
         <div class="container hero-grid">
-          <div class="hero-content reveal">
-            <p class="eyebrow">Hi - I'm,</p>
-            <h1>
-              <span class="highlight">Gaurav Kumar</span><br />
-              Data Science &amp; Python Full Stack Developer who builds insights
-              &amp; dashboards and web apps that solve real world problems.
+
+          <div class="hero-copy">
+            <div class="status-badge reveal">
+              <span class="status-dot"></span>
+              Available for work · Pan India
+            </div>
+
+            <p class="eyebrow reveal">Data Science &amp; Full Stack Developer</p>
+
+            <h1 class="hero-title reveal">
+              I turn raw data into <em>decisions</em> — and ideas into <em>full‑stack products</em>.
             </h1>
-            <p class="hero-description">
-              I turn messy data into insights and develop full-stack web applications
-              using Python, Django, and Flask. I love combining analytics and
-              development to build powerful, data-driven tools.
+
+            <p class="hero-sub reveal">
+              Currently building → <span id="typedRole"></span>
             </p>
 
-            <div class="skill-pills">
-              <span>SQL &#8226; Data Modeling</span>
-              <span>Power BI</span>
-              <span>MS Advance Excel</span>
-              <span>Statistics &#8226; EDA</span>
-              <span>Backend &#8226; Flask, Django</span>
-              <span>Python &#8226; Numpy, Pandas, Matplotlib, Seaborn, Scikit-Learn</span>
-              <span>Front end &#8226; HTML, CSS, JavaScript, BootStrap, Tailwind CSS</span>
+            <p class="hero-desc reveal">
+              Computer Science graduate specializing in data analytics, machine learning,
+              and full‑stack web development. I build dashboards that inform decisions
+              and applications that people actually use.
+            </p>
+
+            <div class="hero-actions reveal">
+              <a href="https://github.com/GauravBaba3/my-resumes" target="_blank" class="btn btn-fill">Download
+                Resume</a>
+              <a href="#projects" class="btn btn-outline">View Projects</a>
             </div>
 
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">See Projects</a>
-              <a href="#contact" class="btn btn-secondary">Contact</a>
-              <a href="https://github.com/GauravBaba3/my-resumes" target="_blank" class="btn btn-secondary">View
-                Resume</a>
+            <div class="hero-stats reveal">
+              <div class="stat-block">
+                <span class="stat-num" data-target="9">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-num" data-target="900" data-suffix="+">0</span>
+                <span class="stat-label">Hours Learning</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-num" data-target="12">0</span>
+                <span class="stat-label">Certifications</span>
+              </div>
             </div>
           </div>
 
-          <aside class="hero-visual reveal reveal-delay">
-            <div class="profile-card">
-              <div class="mini-profile">
-                <img src="/images/gaurav_profile_pic.jpg" alt="Gaurav Kumar profile" />
-                <div>
-                  <h3>Gaurav Kumar</h3>
-                  <p>Aspiring Data Science &amp; Python Full Stack Web Developer.</p>
-                  <small>&#8226; Open to Work - Pan India <br> &#8226; Open to internships - Pan India</small>
-                </div>
-              </div>
-
-              <div class="skill-pills side-pills">
-                <span>Python</span>
-                <span>SQL</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Scikit-learn</span>
-                <span>PySpark</span>
-
-                <span>Power BI</span>
-                <span>MS Excel</span>
-                <span>Power Query</span>
-
-                <span>Data Cleaning</span>
-                <span>Data Visualization</span>
-                <span>EDA</span>
-                <span>Feature Engineering</span>
-                <span>Statistical Analysis</span>
-                <span>Data Governance</span>
-
-                <span>Machine Learning</span>
-                <span>Cross Validation</span>
-                <span>Hyperparameter Tuning</span>
-
-                <span>ETL Pipelines</span>
-                <span>Data Modeling</span>
-
-                <span>MySQL</span>
-                <span>Query Optimization</span>
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Bootstrap</span>
-                <span>Tailwind CSS</span>
-
-                <span>Django</span>
-                <span>Flask</span>
-
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>VS Code</span>
-                <span>Jupyter Notebook</span>
-
-                <span>Dashboarding</span>
-                <span>KPI Reporting</span>
-                <span>Data Storytelling</span>
-              </div>
-
-              <div class="quick-stats">
-                <article>
-                  <h4>9</h4>
-                  <p>Projects</p>
-                </article>
-                <article>
-                  <h4>900+</h4>
-                  <p>Hours Learning</p>
-                </article>
-                <article>
-                  <h4>12</h4>
-                  <p>Certifications</p>
-                </article>
-              </div>
+          <div class="hero-visual reveal">
+            <div class="portrait-frame">
+              <img src="/images/gaurav_profile_pic.png" alt="Gaurav Kumar"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="portrait-fallback">GK</div>
             </div>
-          </aside>
+            <div class="visual-tag tag-top">📍 Bengaluru, India</div>
+            <div class="visual-tag tag-bottom">🟢 Open to Work</div>
+          </div>
+
+        </div>
+
+        <!-- Tech marquee -->
+        <div class="marquee-strip reveal">
+          <div class="marquee-track">
+            <div class="marquee-inner">
+              <span>Python</span><span>SQL</span><span>Power BI</span><span>Django</span>
+              <span>Flask</span><span>React</span><span>Pandas</span><span>NumPy</span>
+              <span>Scikit-learn</span><span>MySQL</span><span>Excel</span><span>Git</span>
+              <span>Python</span><span>SQL</span><span>Power BI</span><span>Django</span>
+              <span>Flask</span><span>React</span><span>Pandas</span><span>NumPy</span>
+              <span>Scikit-learn</span><span>MySQL</span><span>Excel</span><span>Git</span>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- ══════════════ ABOUT ══════════════ -->
       <section class="section" id="about">
         <div class="container">
-          <div class="section-heading reveal">
-            <h2>About Me</h2>
-          </div>
-          <div class="about-layout">
-            <div class="about-content reveal">
+          <p class="kicker reveal">01 / About</p>
+          <h2 class="section-title reveal">Who I am</h2>
+
+          <div class="about-grid">
+            <div class="about-text reveal">
               <p>
-                I am a <strong>Computer Science and Engineering graduate</strong> with a focus on <strong>data
-                  analytics</strong> and
-                <strong>full stack development</strong>, along with practical experience in machine learning. I enjoy
-                working with
-                data
-                to solve real-world problems, build clear dashboards, and develop practical web applications.
-
-                I have gained hands-on experience through academic projects, personal work, and internships, where I
-                worked with
-                <strong>Python, SQL, Power BI, Excel, and Google BigQuery</strong>, along with web technologies like
-                HTML,
-                CSS, and
-                JavaScript.
-                My work primarily involves <strong>data cleaning, analysis, visualization, and SQL-based
-                  reporting</strong>, along
-                with
-                building structured and user-friendly applications.
-
-                I have applied machine learning techniques in projects such as road crash injury prediction and breast
-                cancer
-                prediction,
-                achieving strong model performance using tools like Pandas, NumPy, and Scikit-learn. I am comfortable
-                working across
-                end-to-end workflows, including data preprocessing, analysis, and visualization.
-
-                I focus on clear problem understanding, clean logic, and reliable outcomes. I am currently seeking
-                entry-level
-                opportunities where I can apply my skills, contribute effectively, and continue to grow.
+                I'm a <strong>Computer Science &amp; Engineering graduate</strong> who bridges data
+                analytics and full‑stack development. I work best where messy datasets meet real
+                products — cleaning data, building ML models, designing dashboards, and shipping
+                applications people actually use.
+              </p>
+              <p>
+                Through internships and self‑driven builds, I've developed hands‑on fluency with
+                <strong>Python, SQL, Power BI, Django, and React</strong>. I care about clean logic
+                and communicating insights clearly to non‑technical stakeholders.
               </p>
 
-              <ul class="about-list">
-                <li><strong>Data Analysis & Visualization:</strong> Pandas, NumPy, Matplotlib, Seaborn, Power BI</li>
-                <li><strong>Machine Learning:</strong> Scikit-learn, Random Forest, Classification Models</li>
-                <li><strong>Databases & Querying:</strong> Oracle SQL, MySQL</li>
-                <li><strong>Data Processes:</strong> EDA, ETL Pipelines, Data Cleaning, Feature Engineering</li>
-                <li><strong>Backend Development:</strong> Django, Flask</li>
-                <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React js, Tailwind</li>
-              </ul>
+              <div class="fact-list">
+                <div class="fact-row"><span>Location</span><strong>Bengaluru, India</strong></div>
+                <div class="fact-row"><span>Focus</span><strong>Data Science · Full Stack</strong></div>
+                <div class="fact-row"><span>Degree</span><strong>B.E. CSE — Anna University</strong></div>
+                <div class="fact-row"><span>Status</span><strong class="text-success">Open to Work</strong></div>
+              </div>
+            </div>
 
-              <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">My Work</a>
-                <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+            <div class="cap-grid reveal">
+              <div class="cap-card">
+                <span class="cap-num">01</span>
+                <h4>Data Analysis</h4>
+                <p>Pandas, NumPy, Excel, EDA, Statistical Analysis</p>
+              </div>
+              <div class="cap-card">
+                <span class="cap-num">02</span>
+                <h4>Machine Learning</h4>
+                <p>Scikit-learn, Random Forest, Classification</p>
+              </div>
+              <div class="cap-card">
+                <span class="cap-num">03</span>
+                <h4>BI &amp; Dashboards</h4>
+                <p>Power BI, Matplotlib, Seaborn, KPI Reporting</p>
+              </div>
+              <div class="cap-card">
+                <span class="cap-num">04</span>
+                <h4>Backend Dev</h4>
+                <p>Django, Flask, REST APIs, ORM</p>
+              </div>
+              <div class="cap-card">
+                <span class="cap-num">05</span>
+                <h4>Frontend Dev</h4>
+                <p>React, HTML, CSS, Tailwind, Bootstrap</p>
+              </div>
+              <div class="cap-card">
+                <span class="cap-num">06</span>
+                <h4>Databases</h4>
+                <p>MySQL, SQLite, PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-row reveal">
+            <div class="why-item">
+              <h4>Fast Learner</h4>
+              <p>900+ hours of deliberate learning across data, ML, and full‑stack in 12 months.</p>
+            </div>
+            <div class="why-item">
+              <h4>End-to-End Ownership</h4>
+              <p>I take a problem from raw data to a deployed, production‑ready product.</p>
+            </div>
+            <div class="why-item">
+              <h4>Data-to-Decision Mindset</h4>
+              <p>I communicate insights clearly so stakeholders can act, not just admire a chart.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════ SKILLS ══════════════ -->
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <p class="kicker reveal">02 / Skills</p>
+          <h2 class="section-title reveal">Tech Stack</h2>
+
+          <div class="skills-tabs reveal">
+            <button class="skill-tab active" data-tab="languages">Core</button>
+            <button class="skill-tab" data-tab="data">Data</button>
+            <button class="skill-tab" data-tab="ml">ML</button>
+            <button class="skill-tab" data-tab="backend">Backend</button>
+            <button class="skill-tab" data-tab="frontend">Frontend</button>
+            <button class="skill-tab" data-tab="tools">Tools</button>
+          </div>
+
+          <div class="skills-panel active" data-panel="languages">
+            <div class="skill-grid">
+              <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+              <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+              <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+              <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+              <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+              <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            </div>
+          </div>
+          <div class="skills-panel" data-panel="data">
+            <div class="skill-grid">
+              <div class="skill-item"><i class="devicon-pandas-plain colored"></i><span>Pandas</span></div>
+              <div class="skill-item"><i class="devicon-numpy-plain colored"></i><span>NumPy</span></div>
+              <div class="skill-item"><i class="devicon-matplotlib-plain colored"></i><span>Matplotlib</span></div>
+              <div class="skill-item"><span class="emoji">📊</span><span>Seaborn</span></div>
+              <div class="skill-item"><span class="emoji">📈</span><span>Power BI</span></div>
+              <div class="skill-item"><span class="emoji">📑</span><span>Excel</span></div>
+            </div>
+          </div>
+          <div class="skills-panel" data-panel="ml">
+            <div class="skill-grid">
+              <div class="skill-item"><i class="devicon-scikitlearn-plain colored"></i><span>Scikit-learn</span></div>
+              <div class="skill-item"><span class="emoji">🌲</span><span>Random Forest</span></div>
+              <div class="skill-item"><span class="emoji">🔧</span><span>Hyperparameter Tuning</span></div>
+              <div class="skill-item"><span class="emoji">🔄</span><span>Cross Validation</span></div>
+              <div class="skill-item"><span class="emoji">🧹</span><span>Feature Engineering</span></div>
+              <div class="skill-item"><span class="emoji">📦</span><span>ETL Pipelines</span></div>
+            </div>
+          </div>
+          <div class="skills-panel" data-panel="backend">
+            <div class="skill-grid">
+              <div class="skill-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+              <div class="skill-item"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
+              <div class="skill-item"><span class="emoji">🔌</span><span>REST APIs</span></div>
+              <div class="skill-item"><span class="emoji">🔐</span><span>JWT Auth</span></div>
+              <div class="skill-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+              <div class="skill-item"><span class="emoji">⚙️</span><span>Gunicorn</span></div>
+            </div>
+          </div>
+          <div class="skills-panel" data-panel="frontend">
+            <div class="skill-grid">
+              <div class="skill-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+              <div class="skill-item"><i class="devicon-redux-original colored"></i><span>Redux</span></div>
+              <div class="skill-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+              <div class="skill-item"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind</span></div>
+              <div class="skill-item"><i class="devicon-vitejs-plain colored"></i><span>Vite</span></div>
+              <div class="skill-item"><span class="emoji">🔗</span><span>Axios</span></div>
+            </div>
+          </div>
+          <div class="skills-panel" data-panel="tools">
+            <div class="skill-grid">
+              <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+              <div class="skill-item"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+              <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+              <div class="skill-item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+              <div class="skill-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+              <div class="skill-item"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════ EXPERIENCE ══════════════ -->
+      <section class="section" id="experience">
+        <div class="container">
+          <p class="kicker reveal">03 / Experience</p>
+          <h2 class="section-title reveal">Work Experience</h2>
+
+          <div class="exp-list">
+
+            <article class="exp-row reveal">
+              <div class="exp-date mono">Aug 2025 – Present</div>
+              <div class="exp-body">
+                <h3>Data Science &amp; Full-Stack Web Development Trainee</h3>
+                <p class="exp-company">Qspiders</p>
+                <div class="exp-chips">
+                  <span>10K+ records analyzed</span>
+                  <span>40% faster reporting</span>
+                  <span>20% query speedup</span>
+                </div>
+                <details class="exp-details">
+                  <summary>Show details</summary>
+                  <ul>
+                    <li>Performed exploratory data analysis on 10,000+ records using Python and SQL across sales, HR,
+                      and customer behavior domains.</li>
+                    <li>Designed and automated KPI dashboards in Power BI, improving reporting efficiency by 40%.</li>
+                    <li>Optimized SQL queries using joins and window functions, reducing execution time by 20%.</li>
+                    <li>Built data cleaning pipelines to handle missing values, duplicates, and outliers.</li>
+                  </ul>
+                </details>
+                <a href="https://github.com/GauravBaba3/my-certificates/blob/main/data%20science%20and%20python%20full-stack%20web%20development.pdf"
+                  target="_blank" class="cert-link">View Certificate →</a>
+              </div>
+            </article>
+
+            <article class="exp-row reveal">
+              <div class="exp-date mono">Feb – Mar 2025</div>
+              <div class="exp-body">
+                <h3>Web Development Intern</h3>
+                <p class="exp-company">NSIC Technical Services Centre</p>
+                <div class="exp-chips">
+                  <span>30% faster load time</span>
+                  <span>20+ bugs resolved</span>
+                  <span>200+ monthly users</span>
+                </div>
+                <details class="exp-details">
+                  <summary>Show details</summary>
+                  <ul>
+                    <li>Developed and optimized 5+ responsive web pages using HTML, CSS, JavaScript, and Bootstrap.</li>
+                    <li>Integrated React.js components, improving UI interactivity by 25%.</li>
+                    <li>Assisted in backend data handling using PHP and MySQL, improving server response time by 15%.
+                    </li>
+                  </ul>
+                </details>
+                <a href="https://github.com/GauravBaba3/my-certificates/blob/main/nsic%20certificate%20_2025_07_22_15_24_59_417.pdf"
+                  target="_blank" class="cert-link">View Certificate →</a>
+              </div>
+            </article>
+
+            <article class="exp-row reveal">
+              <div class="exp-date mono">Feb – Mar 2024</div>
+              <div class="exp-body">
+                <h3>Frontend Web Developer Intern</h3>
+                <p class="exp-company">Internship Studio</p>
+                <div class="exp-chips">
+                  <span>Mobile-first approach</span>
+                  <span>Reusable components</span>
+                </div>
+                <details class="exp-details">
+                  <summary>Show details</summary>
+                  <ul>
+                    <li>Developed responsive, interactive web pages using HTML, CSS, JavaScript, and React.js.</li>
+                    <li>Built reusable component-based interfaces with React Hooks, state, and props.</li>
+                  </ul>
+                </details>
+                <a href="https://github.com/GauravBaba3/my-certificates/blob/main/Gaurav%20Kumar%20-%20Participation%20Certificate.pdf"
+                  target="_blank" class="cert-link">View Certificate →</a>
+              </div>
+            </article>
+
+            <article class="exp-row reveal">
+              <div class="exp-date mono">Dec 2023 – Jan 2024</div>
+              <div class="exp-body">
+                <h3>Frontend Web Developer Intern</h3>
+                <p class="exp-company">CodeAlpha</p>
+                <div class="exp-chips">
+                  <span>3 apps shipped</span>
+                  <span>Code Editor · Task App · Tracker</span>
+                </div>
+                <details class="exp-details">
+                  <summary>Show details</summary>
+                  <ul>
+                    <li>Completed a 4-week virtual internship, building 3 interactive web applications.</li>
+                    <li>Built a browser-based code editor with syntax highlighting and live preview.</li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="exp-row reveal">
+              <div class="exp-date mono">Sep – Oct 2023</div>
+              <div class="exp-body">
+                <h3>Frontend Web Developer Intern</h3>
+                <p class="exp-company">Bharat Intern</p>
+                <div class="exp-chips">
+                  <span>Govt-supported scheme</span>
+                  <span>Git workflows</span>
+                </div>
+                <details class="exp-details">
+                  <summary>Show details</summary>
+                  <ul>
+                    <li>Completed a government-supported virtual internship developing responsive UIs with React.js.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="exp-row reveal">
+              <div class="exp-date mono">Jul 2023</div>
+              <div class="exp-body">
+                <h3>Frontend Web Developer Intern</h3>
+                <p class="exp-company">freeCodeCamp</p>
+                <div class="exp-chips">
+                  <span>Portfolio shipped</span>
+                  <span>Lazy loading &amp; optimization</span>
+                </div>
+                <details class="exp-details">
+                  <summary>Show details</summary>
+                  <ul>
+                    <li>Developed a responsive personal portfolio using HTML, CSS, and JavaScript.</li>
+                    <li>Implemented image optimization and lazy loading to reduce page load time.</li>
+                  </ul>
+                </details>
+                <a href="https://github.com/GauravBaba3/my-certificates/blob/main/freecodecamp.org-freecodecamporgcertificationGaurav_kumarresponsive-web-design-fpscreenshot.pdf"
+                  target="_blank" class="cert-link">View Certificate →</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════ PROJECTS ══════════════ -->
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <p class="kicker reveal">04 / Projects</p>
+          <h2 class="section-title reveal">Featured Work</h2>
+
+          <div class="filter-row reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="bi">Data &amp; BI</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+          </div>
+
+          <div class="case-studies">
+
+            <article class="case-card reveal" data-category="web">
+              <div class="case-img"><img src="/images/blog-website.png" alt="Full Stack Blog System" loading="lazy" />
+              </div>
+              <div class="case-body">
+                <span class="case-type mono">Full Stack Web App</span>
+                <h3>Full Stack Blog System — WriteWaves</h3>
+                <p class="case-outcome">A production-grade blog platform with real auth, real content, real users.</p>
+                <div class="case-meta">
+                  <div><strong>Problem</strong>
+                    <p>No simple platform combining JWT auth, CRUD, likes, and category filtering in one project.</p>
+                  </div>
+                  <div><strong>Approach</strong>
+                    <p>React (Vite) + Django REST Framework with Redux Toolkit and Axios.</p>
+                  </div>
+                  <div><strong>Result</strong>
+                    <p>Fully deployed app with protected routes, search, and pagination.</p>
+                  </div>
+                </div>
+                <div class="tag-row">
+                  <span>Python</span><span>Django</span><span>DRF</span><span>React</span><span>Redux</span><span
+                    class="tag-more">+6</span>
+                </div>
+                <div class="case-links">
+                  <a href="https://github.com/GauravBaba3/Blog-System" target="_blank"
+                    class="btn btn-outline btn-sm">GitHub</a>
+                  <a href="https://writewaves.netlify.app/" target="_blank" class="btn btn-fill btn-sm">Live Demo →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card reveal" data-category="web">
+              <div class="case-img"><img src="/images/hospital management system.png" alt="Hospital Management System"
+                  loading="lazy" /></div>
+              <div class="case-body">
+                <span class="case-type mono">Django Full Stack</span>
+                <h3>Hospital Management System</h3>
+                <p class="case-outcome">End-to-end hospital ops — from patient registration to discharge billing.</p>
+                <div class="case-meta">
+                  <div><strong>Problem</strong>
+                    <p>Hospital workflows managed manually without a unified system.</p>
+                  </div>
+                  <div><strong>Approach</strong>
+                    <p>Django monolith with Bootstrap 5, reCAPTCHA, and Gunicorn deployment.</p>
+                  </div>
+                  <div><strong>Result</strong>
+                    <p>Live application handling full hospital lifecycle end-to-end.</p>
+                  </div>
+                </div>
+                <div class="tag-row">
+                  <span>Python</span><span>Django</span><span>Bootstrap 5</span><span>SQLite</span><span
+                    class="tag-more">+3</span>
+                </div>
+                <div class="case-links">
+                  <a href="https://github.com/GauravBaba3/Hospital-Management-System" target="_blank"
+                    class="btn btn-outline btn-sm">GitHub</a>
+                  <a href="https://hospital-management-system-1t64.onrender.com/" target="_blank"
+                    class="btn btn-fill btn-sm">Live Demo →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card reveal" data-category="ml">
+              <div class="case-img"><img src="/images/Resume_screening_system.png" alt="AI Resume Screening"
+                  loading="lazy" /></div>
+              <div class="case-body">
+                <span class="case-type mono">AI / NLP / ML</span>
+                <h3>AI Resume Screening &amp; Ranking System</h3>
+                <p class="case-outcome">Automated candidate ranking against job requirements using NLP.</p>
+                <div class="case-meta">
+                  <div><strong>Problem</strong>
+                    <p>Manual resume screening is slow and inconsistent at scale.</p>
+                  </div>
+                  <div><strong>Approach</strong>
+                    <p>NLP + ML pipeline extracts skills/experience from PDFs and scores candidates.</p>
+                  </div>
+                  <div><strong>Result</strong>
+                    <p>Fully automated Top-N ranking system deployable via Streamlit.</p>
+                  </div>
+                </div>
+                <div class="tag-row">
+                  <span>Python</span><span>Streamlit</span><span>NLP</span><span>Scikit-learn</span><span
+                    class="tag-more">+4</span>
+                </div>
+                <div class="case-links">
+                  <a href="https://github.com/GauravBaba3/Resume-Screening-System" target="_blank"
+                    class="btn btn-fill btn-sm">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <h3 class="more-heading reveal">More Projects</h3>
+          <div class="mini-grid">
+
+            <article class="mini-card reveal" data-category="ml">
+              <div class="mini-img"><img src="/images/prompt system.png" alt="Prompt Evaluation Studio"
+                  loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">AI / LLM Platform</span>
+                <h4>Prompt Evaluation Studio Pro</h4>
+                <p>Gemini-powered platform with versioning, analytics, and export for systematic prompt engineering.</p>
+                <div class="tag-row"><span>Python</span><span>Streamlit</span><span>Gemini</span><span
+                    class="tag-more">+4</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Prompt-Evaluation-Studio-Pro" target="_blank">GitHub</a>
+                  <a href="https://prompt-evaluation-studio-pro-kbtghkyzchfcbqez97idy6.streamlit.app/"
+                    target="_blank">Live →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="ml">
+              <div class="mini-img"><img src="/images/Natural_Language_to_Data_Filtering_&_Visualization_System.png"
+                  alt="NL Query System" loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">NLP / Data</span>
+                <h4>Natural Language → Data Visualization</h4>
+                <p>Type a question, get a chart. Converts English queries into filters and visualizations.</p>
+                <div class="tag-row"><span>Python</span><span>Streamlit</span><span>LLM</span><span
+                    class="tag-more">+4</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Natural-Language-Data-Filtering-Visualization-System"
+                    target="_blank">GitHub</a>
+                  <a href="https://natural-language-data-filtering-visualization-system-mszijrgml.streamlit.app/"
+                    target="_blank">Live →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="ml">
+              <div class="mini-img"><img src="/images/breast_cancer_prediction.png" alt="Breast Cancer Prediction"
+                  loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">Machine Learning</span>
+                <h4>Breast Cancer Prediction — ML</h4>
+                <p>Random Forest classification with full preprocessing pipeline and Flask interface.</p>
+                <div class="tag-row"><span>Python</span><span>Scikit-learn</span><span>Flask</span><span
+                    class="tag-more">+3</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/breast_cancer_model" target="_blank">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="bi">
+              <div class="mini-img"><img src="/images/blickit project dashboard screenshot.png" alt="Blinkit Dashboard"
+                  loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">Power BI Dashboard</span>
+                <h4>Blinkit Sales Analytics Dashboard</h4>
+                <p>KPIs, product trends, and outlet insights for data-driven decisions.</p>
+                <div class="tag-row"><span>Power BI</span><span>SQL</span><span>DAX</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/blinkit%20project.pbix"
+                    target="_blank">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="bi">
+              <div class="mini-img"><img src="/images/car sales dahboard.png" alt="Car Sales Dashboard"
+                  loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">Power BI Dashboard</span>
+                <h4>Car Sales Performance Dashboard</h4>
+                <p>Metrics across fuel type, transmission, region, and yearly revenue.</p>
+                <div class="tag-row"><span>Power BI</span><span>SQL</span><span>DAX</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/bmw%20car%20dashbaord%20project%202.pbix"
+                    target="_blank">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="bi">
+              <div class="mini-img"><img src="/images/employee_attrition_dashboard.png" alt="Employee Attrition"
+                  loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">Power BI Dashboard</span>
+                <h4>Employee Attrition &amp; Workforce Insights</h4>
+                <p>Attrition, salary trends, and headcount by department and work mode.</p>
+                <div class="tag-row"><span>Power BI</span><span>SQL</span><span>HR</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/emp_attrition%20analysis%20project%203.pbix"
+                    target="_blank">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="bi">
+              <div class="mini-img"><img src="/images/hr_analytics_dashboard.png" alt="HR Analytics" loading="lazy" />
+              </div>
+              <div class="mini-body">
+                <span class="case-type mono">Power BI Dashboard</span>
+                <h4>HR Analytics &amp; Attrition Dashboard</h4>
+                <p>Attrition rate, avg salary, and job-role analysis for retention strategy.</p>
+                <div class="tag-row"><span>Power BI</span><span>SQL</span><span>DAX</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/Hr_analytics_dashboard.pbix"
+                    target="_blank">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="bi">
+              <div class="mini-img"><img src="/images/super_store_sales.png" alt="Super Store Dashboard"
+                  loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">Power BI Dashboard</span>
+                <h4>Super Store Sales &amp; Profit Analysis</h4>
+                <p>Sales by region, category, and payment mode with monthly trends.</p>
+                <div class="tag-row"><span>Power BI</span><span>SQL</span><span>DAX</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/super%20store%20sales.pbix"
+                    target="_blank">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card reveal" data-category="bi">
+              <div class="mini-img"><img src="/images/vrinda_store_annual_report_2022_using_excel.png"
+                  alt="Vrinda Store" loading="lazy" /></div>
+              <div class="mini-body">
+                <span class="case-type mono">Excel Dashboard</span>
+                <h4>Vrinda Store Annual Sales Dashboard</h4>
+                <p>Annual sales, demographics, and channel performance analysis.</p>
+                <div class="tag-row"><span>Excel</span><span>SQL</span><span>Pivot Tables</span></div>
+                <div class="mini-links">
+                  <a href="https://github.com/GauravBaba3/Excel-projects/blob/master/Vrinda%20Store%20Data%20Analysis.xlsx"
+                    target="_blank">GitHub →</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════ EDUCATION ══════════════ -->
+      <section class="section" id="education">
+        <div class="container">
+          <p class="kicker reveal">05 / Education</p>
+          <h2 class="section-title reveal">Education</h2>
+
+          <div class="edu-list reveal">
+            <div class="edu-row">
+              <div class="edu-year mono">2021–2025</div>
+              <div class="edu-content">
+                <h3>B.E. Computer Science &amp; Engineering</h3>
+                <p class="edu-inst">Anna University, Tamil Nadu · CGPA 7.57/10</p>
+                <p>Focused on data analytics, machine learning, and software development.</p>
+              </div>
+            </div>
+            <div class="edu-row">
+              <div class="edu-year mono">2019–2021</div>
+              <div class="edu-content">
+                <h3>Higher Secondary (12th)</h3>
+                <p class="edu-inst">Mahesh Singh Yadav College, Gaya · 63%</p>
+                <p>Mathematics and Science focus — built a strong analytical foundation.</p>
+              </div>
+            </div>
+            <div class="edu-row">
+              <div class="edu-year mono">2019</div>
+              <div class="edu-content">
+                <h3>Secondary Education (10th)</h3>
+                <p class="edu-inst">High School · 63%</p>
+                <p>Core academic foundation with focus on logical reasoning.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section experience" id="experience">
+      <!-- ══════════════ CERTIFICATIONS ══════════════ -->
+      <section class="section section-alt" id="certifications">
         <div class="container">
-          <div class="section-heading reveal">
-            <h2>Work Experience</h2>
+          <p class="kicker reveal">06 / Certifications</p>
+          <h2 class="section-title reveal">Certifications</h2>
+
+          <div class="cert-filter reveal">
+            <button class="filter-btn active" data-cert-filter="all">All (12)</button>
+            <button class="filter-btn" data-cert-filter="data">Data &amp; AI</button>
+            <button class="filter-btn" data-cert-filter="cloud">Cloud</button>
+            <button class="filter-btn" data-cert-filter="web">Web Dev</button>
+            <button class="filter-btn" data-cert-filter="pro">Professional</button>
           </div>
 
-          <div class="experience-grid">
-            <article class="exp-item reveal">
-              <h3>Data Science And Full-Stack Web Development Trainee</h3>
-              <p class="company">Qspiders | Aug 2025 - Present</p>
-              <ul>
-                <li>Performed exploratory data analysis on datasets with 10,000+ records using Python and SQL.</li>
-                <li>Designed and automated KPI dashboards in Power BI, improving reporting efficiency by 40%.</li>
-                <li>Optimized SQL queries using joins and window functions, reducing execution time by 20%.</li>
-                <li>Built data cleaning pipelines to handle missing values, duplicates, and outliers.</li>
-                <li>reducing query execution time by 20%.Developed optimized SQL queries using joins, aggregations, and
-                  window functions,</li>
-                <li>improving reporting efficiency by 40% Designed and automated KPI reporting dashboards in Power BI.
-                </li>
-                <li>Performed exploratory analysis on structured datasets (10,000+ records) using Python and SQL across
-                  sales, HR, and
-                  customer behavior domains to support business performance analysis.</li>
-                <li>Created stakeholder-facing visualizations with Matplotlib and Seaborn to communicate analytical
-                  findings and trends
-                  clearly.</li>
-              </ul>
-              <a target="_blank" href="https://github.com/GauravBaba3/my-certificates/blob/main/data%20science%20and%20python%20full-stack%20web%20development.pdf" class="btn btn-small btn-secondary">
-                See Certificate
-              </a>
-            </article>
-
-            <article class="exp-item reveal">
-              <h3>Web Development Intern</h3>
-              <p class="company">NSIC Technical Services Centre | Feb 2025 - Mar 2025</p>
-              <ul>
-                <li>Developed and optimized 5+ responsive web pages using HTML, CSS, JavaScript, and Bootstrap,
-                  improving
-                  load times by 30%
-                  and enhancing cross-device compatibility.</li>
-                <li>Collaborated with a team to integrate React.js components, improving UI interactivity and reducing
-                  user friction by 25%
-                  based on internal testing.</li>
-                <li>Implemented dynamic features such as form validations and navigation bars, resulting in a smoother
-                  user experience for
-                  200+ monthly users of the internal portal.</li>
-                <li>Assisted in backend data handling using PHP and MySQL, streamlining database queries and
-                  contributing
-                  to a 15%
-                  improvement in server response time.</li>
-                <li>Participated in code reviews and debugging sessions, identifying and resolving 20+ front-end bugs,
-                  ensuring
-                  production-ready code quality.</li>
-                <li>Gained hands-on experience in deploying web applications and maintaining version control using Git.
-                </li>
-              </ul>
-              <a target="_blank" href="https://github.com/GauravBaba3/my-certificates/blob/main/nsic%20certificate%20_2025_07_22_15_24_59_417.pdf" class="btn btn-small btn-secondary">
-                See Certificate
-              </a>
-            </article>
-
-            <article class="exp-item reveal">
-              <h3>Frontend Web Developer Intern</h3>
-              <p class="company">Internship Studio | Feb 2024 - Mar 2024</p>
-            
-              <ul>
-                <li>Developed responsive and interactive web pages using HTML, CSS, JavaScript, and React.js, ensuring clean UI
-                  implementation with a mobile-first approach.</li>
-            
-                <li>Built reusable component-based interfaces using React Hooks, state, and props, improving application
-                  maintainability and user experience.</li>
-            
-                <li>Ensured cross-browser compatibility and responsive layouts, providing a consistent experience across desktops,
-                  tablets, and mobile devices.</li>
-            
-                <li>Optimized UI performance to achieve faster rendering, smoother navigation, and improved overall application
-                  responsiveness.</li>
-            
-                <li>Collaborated with mentors and fellow interns in a remote environment, contributing to project planning,
-                  problem-solving, and Git-based version control workflows.</li>
-              </ul>
-              <a target="_blank" href="https://github.com/GauravBaba3/my-certificates/blob/main/Gaurav%20Kumar%20-%20Participation%20Certificate.pdf" class="btn btn-small btn-secondary">
-                See Certificate
-              </a>
-            </article>
-
-            <article class="exp-item reveal">
-              <h3>Frontend Web Developer Intern</h3>
-              <p class="company">CodeAlpha | Dec 2023 - Jan 2024</p>
-            
-              <ul>
-                <li>Successfully completed a 4-week virtual internship focused on frontend web development, building practical
-                  projects and strengthening core development skills.</li>
-            
-                <li>Developed three interactive web applications including a Code Editor, Task Scheduler, and Issue Tracker using
-                  HTML, CSS, JavaScript, and Bootstrap.</li>
-            
-                <li>Built a browser-based code editor featuring syntax highlighting and live preview functionality to enhance the
-                  coding experience.</li>
-            
-                <li>Designed and implemented a task management application that allows users to create, edit, organize, and track
-                  tasks with deadlines and attachments.</li>
-            
-                <li>Created an issue tracking system for managing, assigning, and prioritizing project issues, improving
-                  collaboration and workflow organization.</li>
-              </ul>
-              <a target="_blank" href="#" class="btn btn-small btn-secondary">
-                See Certificate
-              </a>
-            </article>
-
-            <article class="exp-item reveal">
-              <h3>Frontend Web Developer Intern</h3>
-              <p class="company">Bharat Intern | Sep 2023 - Oct 2023</p>
-            
-              <ul>
-                <li>Completed a government-supported virtual internship through the Bharat Internship Scheme, gaining practical
-                  experience by working on real-world frontend development projects.</li>
-            
-                <li>Developed responsive and interactive user interfaces using HTML, CSS, JavaScript, and React.js, following clean
-                  coding practices and modern web development standards.</li>
-            
-                <li>Collaborated with mentors and fellow interns in a remote environment, participating in Git-based workflows, code
-                  reviews, bug fixes, and feature enhancements.</li>
-            
-                <li>Built project-based applications involving form handling, dynamic UI updates, reusable components, and
-                  responsive layouts to strengthen frontend development skills.</li>
-              </ul>
-              <a target="_blank" href="#" class="btn btn-small btn-secondary">
-                See Certificate
-              </a>
-            </article>
-
-            <article class="exp-item reveal">
-              <h3>Frontend Web Developer Intern</h3>
-              <p class="company">freeCodeCamp | Jul 2023</p>
-            
-              <ul>
-                <li>Developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase projects,
-                  technical skills, and professional achievements.</li>
-            
-                <li>Improved website performance by implementing image optimization and lazy loading techniques, significantly
-                  reducing page load time and enhancing user experience.</li>
-            
-                <li>Worked closely with designers and mentors to build responsive, user-friendly interfaces that delivered a
-                  consistent experience across desktop, tablet, and mobile devices.</li>
-            
-                <li>Applied modern frontend development best practices, including semantic HTML, clean CSS architecture, and
-                  responsive layouts to create maintainable and accessible web pages.</li>
-              </ul>
-              <a target="_blank" href="https://github.com/GauravBaba3/my-certificates/blob/main/freecodecamp.org-freecodecamporgcertificationGaurav_kumarresponsive-web-design-fpscreenshot.pdf" class="btn btn-small btn-secondary">
-                See Certificate
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="container">
-          <div class="section-heading reveal">
-            <h2>Projects</h2>
-          </div>
-          <div class="projects-grid">
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/blog-website.png" alt="Full Stack Blog System" />
-
-              <h3>Full Stack Blog System(writewaves)</h3>
-
-              <p>
-                A full stack blog application built with React (Vite) and Django REST Framework.
-                The project includes JWT authentication, protected routes, user profile management,
-                blog CRUD operations, likes, comments, category filtering, search, pagination,
-                and a responsive user interface. Redux Toolkit is used for state management and
-                Axios handles API communication between the React frontend and Django backend.
-              </p>
-
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Django</span>
-                <span>Django REST Framework</span>
-                <span>PostgreSQL</span>
-                <span>React</span>
-                <span>Vite</span>
-                <span>JavaScript</span>
-                <span>Redux Toolkit</span>
-                <span>Axios</span>
-                <span>React Router</span>
-                <span>JWT Authentication</span>
-                <span>REST API</span>
-              </div>
-
-              <div class="project-links">
-                <a target="_blank" href="https://github.com/GauravBaba3/Blog-System"
-                  class="btn btn-small btn-secondary">
-                  See On Github
-                </a>
-                <a target="_blank" href="https://writewaves.netlify.app/" class="btn btn-small btn-secondary">
-                  See Live Demo
-                </a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/hospital management system.png"
-                alt="Hospital Management System" />
-
-              <h3>Hospital Management System</h3>
-
-              <p>
-                A full-stack Hospital Management System built with Django to streamline
-                hospital operations. The application supports patient registration,
-                doctor management, appointment booking, lab report tracking, billing,
-                discharge management, secure authentication, profile management, and
-                production-ready deployment with WhiteNoise and Gunicorn.
-              </p>
-
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Django</span>
-                <span>Bootstrap 5</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>SQLite</span>
-                <span>Django ORM</span>
-                <span>WhiteNoise</span>
-                <span>Gunicorn</span>
-                <span>Pillow</span>
-                <span>Google reCAPTCHA</span>
-                <span>Crispy Forms</span>
-              </div>
-
-              <div class="project-links">
-                <a target="_blank" href="https://github.com/GauravBaba3/Hospital-Management-System"
-                  class="btn btn-small btn-secondary">
-                  See On Github
-                </a>
-
-                <a target="_blank" href="https://hospital-management-system-1t64.onrender.com/"
-                  class="btn btn-small btn-secondary">
-                  See Live Demo
-                </a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/prompt system.png" alt="Prompt Evaluation Studio Pro" />
-
-              <h3>Prompt Evaluation Studio Pro</h3>
-
-              <p>
-                A production-ready Prompt Engineering platform that enables developers to
-                create, compare, evaluate, optimize, and manage AI prompts using the Google
-                Gemini API. The application includes prompt versioning, AI-powered evaluation,
-                optimization suggestions, analytics dashboards, authentication, experiment
-                tracking, and support for exporting results in multiple formats.
-              </p>
-
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Streamlit</span>
-                <span>Google Gemini API</span>
-                <span>LLM</span>
-                <span>Prompt Engineering</span>
-                <span>SQLite</span>
-                <span>SQLAlchemy</span>
-                <span>Pydantic</span>
-                <span>Pandas</span>
-                <span>Plotly</span>
-                <span>Docker</span>
-                <span>ReportLab</span>
-                <span>pytest</span>
-              </div>
-
-              <div class="project-links">
-                <a target="_blank" href="https://github.com/GauravBaba3/Prompt-Evaluation-Studio-Pro"
-                  class="btn btn-small btn-secondary">
-                  See On Github
-                </a>
-
-                <a target="_blank" href="https://prompt-evaluation-studio-pro-kbtghkyzchfcbqez97idy6.streamlit.app/"
-                  class="btn btn-small btn-secondary">
-                  See Live Code
-                </a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/Resume_screening_system.png"
-                alt="Blinkit Sales Analytics Dashboard" />
-              <h3>AI Resume Screening & Top N Candidate Ranking System</h3>
-              <p>An intelligent resume screening system that automates candidate evaluation by extracting key
-                information from resumes
-                and matching it with job requirements. The system uses NLP techniques to identify relevant skills,
-                experience, and
-                keywords, and ranks candidates based on their suitability for a given role.</p>
-              <div class="tag-row"><span>Python</span><span>Streamlit</span><span>LLM
-                  Model</span><span>pandas</span><span>Machine Learning Models</span><span>Hyperparameter
-                  Tuning</span><span>Matplotlib/Seaborn</span><span>Pipeline</span><span>ColumnTransformer</span><span>Pdf
-                  Text extracter</span><span>Encoding</span><span>Preprocessing techniques</span></div>
-              <div class="project-links"><a target="_blank"
-                  href="https://github.com/GauravBaba3/Resume-Screening-System" class="btn btn-small btn-secondary">See
-                  On Github</a></div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/Natural_Language_to_Data_Filtering_&_Visualization_System.png"
-                alt="Blinkit Sales Analytics Dashboard" />
-              <h3>Natural Language Query to Data Filtering & Visualization System</h3>
-              <p>A smart data analysis system that allows users to input queries in natural language and automatically
-                converts them into
-                structured data filters. The system processes the query, filters the dataset, and generates meaningful
-                visualizations
-                such as charts and graphs.</p>
-              <div class="tag-row"><span>Python</span><span>Streamlit</span><span>LLM Model</span><span>Machine Learning
-                  Models</span><span>Hyperparameter
-                  Tuning</span><span>pandas</span><span>Pipeline</span><span>ColumnTransformer</span><span>Pdf Text
-                  extracter</span><span>Encoding</span><span>Preprocessing techniques</span>
-              </div>
-              <div class="project-links">
-                <a target="_blank"
-                  href="https://github.com/GauravBaba3/Natural-Language-Data-Filtering-Visualization-System"
-                  class="btn btn-small btn-secondary">See On Github
-                </a>
-
-                <a target="_blank"
-                  href="https://natural-language-data-filtering-visualization-system-mszijrgml.streamlit.app/"
-                  class="btn btn-small btn-secondary">See Live Demo
-                </a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/breast_cancer_prediction.png"
-                alt="Vrinda Store Sales & Customer Insights Dashboard (2022)" />
-              <h3>Breast Cancer Prediction System using Machine Learning</h3>
-              <p>A machine learning-based project developed to predict breast cancer diagnosis using classification
-                techniques. The model
-                is trained on medical data using algorithms like Random Forest and evaluates performance using metrics
-                such as accuracy,
-                precision, recall, and F1-score. The project includes data preprocessing, feature selection, and model
-                building to
-                support reliable and data-driven medical predictions.</p>
-              <div class="tag-row">
-                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Flask</span><span>Encoding</span><span>Preprocessing
-                  techniques</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>BootStrap</span>
-              </div>
-              <div class="project-links"><a target="_blank" href="https://github.com/GauravBaba3/breast_cancer_model"
-                  class="btn btn-small btn-primary">See On Github</a></div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/blickit project dashboard screenshot.png"
-                alt="Blinkit Sales Analytics Dashboard" />
-              <h3>Blinkit Sales Analytics Dashboard</h3>
-              <p>An interactive dashboard analyzing Blinkit sales performance, showcasing key metrics, product trends,
-                and
-                outlet
-                insights to support data-driven decision-making.</p>
-              <div class="tag-row"><span>Power BI</span><span>SQL</span><span>Dashboard</span></div>
-              <div class="project-links"><a target="_blank"
-                  href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/blinkit%20project.pbix"
-                  class="btn btn-small btn-secondary">See On Github</a></div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/car sales dahboard.png" alt="Car Sales Performance Dashboard" />
-              <h3>Car Sales Performance Dashboard</h3>
-              <p>An interactive car sales dashboard analyzing key metrics like total sales, average price, and model
-                distribution, with
-                insights across fuel type, transmission, region, and yearly revenue trends.</p>
-              <div class="tag-row"><span>Power BI</span><span>SQL</span><span>Dashboard</span></div>
-              <div class="project-links"><a target="_blank"
-                  href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/bmw%20car%20dashbaord%20project%202.pbix"
-                  class="btn btn-small btn-primary">See On Github</a></div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/employee_attrition_dashboard.png"
-                alt="Employee Attrition & Workforce Insights Dashboard" />
-              <h3>Employee Attrition & Workforce Insights Dashboard</h3>
-              <p>An interactive dashboard analyzing employee attrition, workforce distribution, and salary trends. It
-                provides insights into headcount by department, performance ratings, salary distribution, and employee
-                segmentation based on experience level, work mode, and job roles to support HR decision-making.</p>
-              <div class="tag-row"><span>Power BI</span><span>SQL</span><span>Dashboard</span></div>
-              <div class="project-links"><a target="_blank"
-                  href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/emp_attrition%20analysis%20project%203.pbix"
-                  class="btn btn-small btn-primary">See On Github</a></div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/hr_analytics_dashboard.png"
-                alt="HR Analytics & Employee Attrition Dashboard" />
-              <h3>HR Analytics & Employee Attrition Dashboard</h3>
-              <p>An interactive HR analytics dashboard providing insights into employee attrition, salary distribution,
-                age demographics,
-                and job roles. It highlights key metrics such as attrition rate, average salary, and employee count,
-                helping
-                organizations understand workforce trends and improve retention strategies.</p>
-              <div class="tag-row"><span>Power BI</span><span>SQL</span><span>Dashboard</span></div>
-              <div class="project-links"><a target="_blank"
-                  href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/Hr_analytics_dashboard.pbix"
-                  class="btn btn-small btn-primary">See On Github</a></div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/super_store_sales.png"
-                alt="Super Store Sales & Profit Analysis Dashboard" />
-              <h3>Super Store Sales & Profit Analysis Dashboard</h3>
-              <p>An interactive dashboard analyzing superstore sales performance, profit trends, and customer segments.
-                It
-                provides
-                insights into sales by region, category, payment mode, and monthly trends to support better business and
-                inventory
-                decisions.</p>
-              <div class="tag-row"><span>Power BI</span><span>SQL</span><span>Dashboard</span></div>
-              <div class="project-links"><a target="_blank"
-                  href="https://github.com/GauravBaba3/Power-Bi-Projects/blob/main/super%20store%20sales.pbix"
-                  class="btn btn-small btn-primary">See On Github</a></div>
-            </article>
-
-            <article class="project-card reveal">
-              <img class="project-thumb" src="/images/vrinda_store_annual_report_2022_using_excel.png"
-                alt="Vrinda Store Sales & Customer Insights Dashboard (2022)" />
-              <h3>Vrinda Store Sales & Customer Insights Dashboard (2022)</h3>
-              <p>An interactive dashboard analyzing Vrinda Store’s annual sales performance, customer demographics, and
-                order trends. It
-                provides insights into sales by gender, age group, city, and sales channels, along with order status
-                distribution to
-                support better business decisions.</p>
-              <div class="tag-row"><span>Excel</span><span>SQL</span><span>Dashboard</span></div>
-              <div class="project-links"><a target="_blank"
-                  href="https://github.com/GauravBaba3/Excel-projects/blob/master/Vrinda%20Store%20Data%20Analysis.xlsx"
-                  class="btn btn-small btn-primary">See On Github</a></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="education">
-        <div class="container">
-          <div class="section-heading reveal">
-            <h2>Education</h2>
-          </div>
-          <div class="timeline">
-
-            <article class="timeline-card reveal">
-              <h3>Bachelor of Engineering (B.E.) in Computer Science and Engineering</h3>
-              <p class="meta">Anna University, TamilNadu | 2021 - 2025</p>
-              <p>CGPA: 7.57/10. Focused on data analytics, machine learning, and software development.
-                Worked on projects involving Python, SQL, data visualization, and machine learning models.</p>
-            </article>
-
-            <article class="timeline-card reveal">
-              <h3>Higher Secondary Education (12th)</h3>
-              <p class="meta">Mahesh Singh Yadav College - Gaya | 2019 - 2021</p>
-              <p>Percentage: 63%. Completed with a focus on Mathematics and Science, building a strong analytical and
-                problem-solving
-                foundation.</p>
-            </article>
-
-            <article class="timeline-card reveal">
-              <h3>Secondary Education (10th)</h3>
-              <p class="meta">High School | 2019</p>
-              <p>Percentage: 63%. Developed fundamental academic skills with a focus on core subjects and logical
-                reasoning.</p>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="certifications">
-        <div class="container">
-          <div class="section-heading reveal">
-            <h2>Certifications</h2>
-          </div>
-          <div class="cert-list">
-
-            <article class="cert-card">
-              <h3>Data Analytics Job Simulation – Deloitte</h3>
-              <p>Completed practical data analysis tasks including data interpretation and applying analytics to solve
-                business
-                problems.</p>
+          <div class="cert-grid">
+            <article class="cert-item reveal" data-cert-cat="data">
+              <h4>Data Analytics Job Simulation</h4>
+              <p class="cert-issuer">Deloitte</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_HTMk5Rgm6F7GbFPez_1757193397630_completion_certificate.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Data Analytics & Visualization Simulation – Accenture, Forage</h3>
-              <p>Performed data cleaning, visualization, and storytelling tasks to deliver insights and present findings
-                to
-                stakeholders.</p>
+            <article class="cert-item reveal" data-cert-cat="data">
+              <h4>Data Analytics &amp; Visualization</h4>
+              <p class="cert-issuer">Accenture · Forage</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/Data%20Analytics%20and%20Visualization%20Job%20Forage.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Data Visualisation: Empowering Business with Effective Insights - TATA, Forage</h3>
-              <p>Performed data cleaning, visualization, and storytelling tasks to deliver insights and present findings
-                to
-                stakeholders.</p>
+            <article class="cert-item reveal" data-cert-cat="data">
+              <h4>Data Visualisation: Business Insights</h4>
+              <p class="cert-issuer">TATA · Forage</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_HTMk5Rgm6F7GbFPez_1757222954331_completion_certificate.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Analyzing & Visualizing IoT Data on AWS</h3>
-              <p>Worked with IoT data using AWS services to analyze, process, and visualize device data for extracting
-                meaningful
-                insights.</p>
+            <article class="cert-item reveal" data-cert-cat="cloud">
+              <h4>Analyzing &amp; Visualizing IoT Data on AWS</h4>
+              <p class="cert-issuer">Amazon Web Services</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/AWS%20Course%20Completion%20Certificate2.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Fundamentals of Generative AI – Microsoft Learn Certification</h3>
-              <p>Completed a foundational certification in Generative AI from Microsoft Learn, covering core concepts
-                such as large
-                language models, AI-generated content, and real-world applications. Gained a clear understanding of how
-                generative AI
-                systems work and their impact across industries.</p>
+            <article class="cert-item reveal" data-cert-cat="data">
+              <h4>Fundamentals of Generative AI</h4>
+              <p class="cert-issuer">Microsoft Learn</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/fundamental%20of%20generative%20ai.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>AutoML for Production Model Development – Microsoft Learn Certification</h3>
-              <p>Completed hands-on certification from Microsoft Learn focused on using AutoML to train labeled datasets
-                and build
-                production-ready machine learning models. Learned how to automate model selection, training, and
-                deployment for
-                real-world applications.</p>
+            <article class="cert-item reveal" data-cert-cat="data">
+              <h4>AutoML for Production Model Development</h4>
+              <p class="cert-issuer">Microsoft Learn</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/use%20AutoML%20to%20train%20a%20Labeled%20dataset%20and%20develop%20a%20production%20model.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Introduction to Machine Learning – Infosys</h3>
-              <p>Learned fundamental machine learning concepts including supervised learning, model building, and
-                evaluation
-                techniques.</p>
+            <article class="cert-item reveal" data-cert-cat="data">
+              <h4>Introduction to Machine Learning</h4>
+              <p class="cert-issuer">Infosys</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/infosis%20-%20introduction%20to%20machine%20learning.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>AI for India 2.0 – GUVI & Skill India</h3>
-              <p>Learned core AI concepts and real-world applications through a national-level initiative focused on
-                industry-relevant skills.</p>
+            <article class="cert-item reveal" data-cert-cat="data">
+              <h4>AI for India 2.0</h4>
+              <p class="cert-issuer">GUVI · Skill India</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/GuviCertification%20-%20skill%20india%20digital.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Software Development Lifecycle – Waterfall Model</h3>
-              <p>Understood the Waterfall model and its phases, and how structured development processes are applied in
-                real-world
-                projects.</p>
+            <article class="cert-item reveal" data-cert-cat="pro">
+              <h4>SDLC — Waterfall Model</h4>
+              <p class="cert-issuer">Great Learning</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/Gaurav%20Kumar%20waterfall%20model%20from%20great%20learning.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Software Engineering Job Simulation – JPMORGAN CHASE & Co., Forage</h3>
-              <p>Completed a hands-on job simulation involving project setup, REST API development, and system
-                integration using tools
-                like Kafka and H2 database, focusing on real-world backend development practices.</p>
+            <article class="cert-item reveal" data-cert-cat="pro">
+              <h4>Software Engineering Job Simulation</h4>
+              <p class="cert-issuer">JPMorgan Chase · Forage</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_HTMk5Rgm6F7GbFPez_1757223992535_completion_certificate.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Responsive Web Design Certification – freeCodeCamp</h3>
-              <p>Developed responsive websites using HTML and CSS with modern layout techniques and best practices.</p>
+            <article class="cert-item reveal" data-cert-cat="web">
+              <h4>Responsive Web Design</h4>
+              <p class="cert-issuer">freeCodeCamp</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/freecodecamp.org-freecodecamporgcertificationGaurav_kumarresponsive-web-design-fpscreenshot.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
-            <article class="cert-card">
-              <h3>Programming Foundations – LinkedIn Learning</h3>
-              <p>Strengthened programming fundamentals including logic building and problem-solving skills.</p>
+            <article class="cert-item reveal" data-cert-cat="pro">
+              <h4>Programming Foundations</h4>
+              <p class="cert-issuer">LinkedIn Learning</p>
               <a href="https://github.com/GauravBaba3/my-certificates/blob/main/linkedin%20learning%20Programming%20Foundations%20Fundamentals.pdf"
-                target="_blank">View Certificate</a>
+                target="_blank">View →</a>
             </article>
-
           </div>
         </div>
       </section>
 
+      <!-- ══════════════ CONTACT ══════════════ -->
       <section class="section" id="contact">
         <div class="container">
-          <div class="section-heading reveal">
-            <h2>Get in touch</h2>
-          </div>
-          <div class="contact-layout">
-            <article class="contact-card reveal">
-              <h3>Contact Info</h3>
-              <p>Open for internships and entry-level roles. Feel free to reach out for projects or collaborations.</p>
-              <p><strong>Email</strong><br />gaurav.kumar.jobs.2003@gmail.com</p>
-              <p><strong>Phone</strong><br />+91 7481812280</p>
-              <p><strong>Location</strong><br />Bengaluru, India</p>
-              <div class="social-links social-box">
-                <a href="https://www.linkedin.com/in/gauravkumar311/" target="_blank">LinkedIn</a>
-                <a target="_blank" href="https://github.com/GauravBaba3">GitHub</a>
-              </div>
-            </article>
+          <p class="kicker reveal">07 / Contact</p>
+          <h2 class="section-title reveal">Get in touch</h2>
 
-            <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <p class="contact-lead">Open for <strong>internships and entry-level roles</strong>. Reach out for
+                projects or collaborations.</p>
+              <p class="response-note mono">⚡ Usually responds within 24 hours</p>
+
+              <div class="contact-links">
+                <a href="mailto:gaurav.kumar.jobs.2003@gmail.com" class="contact-line">
+                  <span>Email</span><strong>gaurav.kumar.jobs.2003@gmail.com</strong>
+                </a>
+                <a href="tel:+917481812280" class="contact-line">
+                  <span>Phone</span><strong>+91 7481812280</strong>
+                </a>
+                <div class="contact-line">
+                  <span>Location</span><strong>Bengaluru, India</strong>
+                </div>
+              </div>
+
+              <div class="social-row">
+                <a href="https://www.linkedin.com/in/gauravkumar311/" target="_blank"
+                  class="btn btn-outline btn-sm">LinkedIn</a>
+                <a href="https://github.com/GauravBaba3" target="_blank" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm" novalidate>
               <div class="form-grid">
                 <div class="form-group">
-                  <input type="text" id="name" name="name" placeholder="Enter Your Full Name..." required />
-                  <small class="error-message" id="name-error"></small>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Your full name" required />
+                  <small class="error-msg" id="nameError"></small>
                 </div>
                 <div class="form-group">
-                  <input type="email" id="email" name="email" placeholder="Enter Your Mail..." required />
-                  <small class="error-message" id="email-error"></small>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="your@email.com" required />
+                  <small class="error-msg" id="emailError"></small>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" id="subject" name="subject" placeholder="Subject..." />
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="What's this about?" />
               </div>
               <div class="form-group">
-                <textarea id="message" name="message" rows="7" placeholder="Type Message..." required></textarea>
-                <small class="error-message" id="message-error"></small>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+                <small class="error-msg" id="messageError"></small>
               </div>
               <div class="form-actions">
-                <button type="reset" class="btn btn-secondary">Reset</button>
-                <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
+                <button type="reset" class="btn btn-outline">Reset</button>
+                <button type="submit" class="btn btn-fill">Send via WhatsApp</button>
               </div>
             </form>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="footer">
       <div class="container footer-inner">
         <div>
-          <p>Gaurav Kumar - Data Science &amp; Python Full Stack Web Developer</p>
-          <small>Transforming data into clear decisions</small>
+          <p class="footer-name">Gaurav Kumar</p>
+          <small>Transforming data into decisions</small>
         </div>
-        <div>
-          <p>&copy; <span id="year"></span> Gaurav Kumar. All rights reserved. <br>
-          <p>Made With ❤️</p>
-          </p>
-        </div>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <small class="footer-credit">© <span id="year"></span> Gaurav Kumar</small>
       </div>
     </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 
     <script src="script.js"></script>
   </body>
